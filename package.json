@@ -6,15 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start-service": "json-graphql-server ./mockService/graphql-server.json --p 5000",
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.4.11",
+    "graphql": "^15.5.3",
+    "json-graphql-server": "^2.2.3",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "prettier": "^2.4.0"
   }
 }
